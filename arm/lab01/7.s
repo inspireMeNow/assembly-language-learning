@@ -1,0 +1,8 @@
+    AREA INIT ,CODE , READONLY
+	ENTRY
+		MOV R0,#4
+		MOV R1,#8
+		STMIA R0!,{R1,R0}
+		MOV R0,#4
+		LDMIA R0!,{R1,R0}
+    END

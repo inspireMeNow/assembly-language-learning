@@ -1,0 +1,11 @@
+    AREA INIT ,CODE , READONLY
+	ENTRY
+	MRS  R0,CPSR
+
+	ORR  R0,R0,#0X80
+
+	MSR  CPSR_c,R0
+
+	MOV  PC,LR
+    
+    END
